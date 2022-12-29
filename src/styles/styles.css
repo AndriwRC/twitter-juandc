@@ -1,0 +1,92 @@
+/* Basic styles for css editing */
+:root {
+    --primary-color: #1d9bf0;
+    --primary-color-light: rgba(29, 155, 240, 0.1);
+    --secondary-color: rgb(230, 230, 230);
+    --secondary-color-light: #eff3f4;
+    --white: #fff;
+    --black: #0f1419;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100px;
+}
+button:hover {
+    cursor: pointer;
+}
+.twitter {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.twitter__menu, .twitter__recommended {
+    width: 25%;
+}
+.twitter__menu .twitter__nav {
+    padding: 0 20px 0 40px;
+}
+.twitter__nav .twitter__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.twitter__nav .twitter__logo-container:hover {
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+}
+.twitter__nav .twitter__logo-container img {
+    width: 28.4px;
+    height: 23.1px;
+}
+.nav__list .list__item .item__button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 12px;
+    font-size: 2rem;
+    text-align: left;
+    border: none;
+    border-radius: 9999px;
+    background-color: var(--white);
+}
+.nav__list .list__item .item__button:hover {
+    background-color: var(--secondary-color);
+}
+.list__item .item__button .button__icon {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.list__item .item__button .explore {
+    background-image: url(../imgs/explore.png);
+}
+.list__item .item__button .settings {
+    background-image: url(../imgs/settings.png);
+}
+.twitter__profile {
+    width: 50%;
+}

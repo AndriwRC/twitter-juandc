@@ -6,82 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter JuanDC</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
 </head>
 
 <body>
-    <section class="twitter__menu">
-        <nav class="twitter__nav">
-            <ul class="nav__list">
-                <li class="list__item">
-                    <button class="item__button"></button>
-                </li>
-                <li class="list__item">
-                    <button class="item__button"></button>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <main class="twitter__profile">
-        <div class="profile__header">
-            <button class="header__button">Back</button>
-            <div class="header__info">
-                <h2 class="info__name">JuanDC</h2>
-                <p class="info__tweets">12 mil tuits</p>
+    <main class="twitter">
+        <section class="twitter__menu">
+            <nav class="twitter__nav">
+                <div class="twitter__logo-container">
+                    <img src="./src/imgs/twitter-logo.svg.webp" alt="Logo Twitter">
+                </div>
+                <ul class="nav__list">
+                    <li class="list__item">
+                        <button class="item__button"><span class="button__icon explore"></span><span>Explorar</span></button>
+                    </li>
+                    <li class="list__item">
+                        <button class="item__button settings"><span class="button__icon settings"></span><span>Configuración</span></button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="twitter__profile">
+            <div class="profile__header">
+                <button class="header__button">Back</button>
+                <div class="header__info">
+                    <h2 class="info__name">JuanDC</h2>
+                    <p class="info__tweets">12 mil tuits</p>
+                </div>
             </div>
-        </div>
-        <div class="profile__banner">
-            <img src="./src/imgs/juan-banner.jfif" alt="" class="banner__img">
-        </div>
-        <div class="profile__details">
-            <div class="details__header">
-                <figure class="header__img-contianer">
-                    <img src="./src/imgs/juan-profile.jpg" alt="" class="header__img">
-                </figure>
-                <button class="header__button">Seguir</button>
+            <div class="profile__banner">
+                <img src="./src/imgs/juan-banner.jfif" alt="" class="banner__img">
             </div>
-            <div class="detail__description">
-                <h2 class="description__name">💚🚀JuanDC: Juan David Castro ⚡👨‍💻⚛</h2>
-                <p class="description__user">@fjuandc</p>
-                <p class="description__content">
-                    📚🍏 The Eternal Student
-                    👨‍🏫 Course Director and Teacher in
-                    @Platzi
+            <div class="profile__details">
+                <div class="details__header">
+                    <figure class="header__img-contianer">
+                        <img src="./src/imgs/juan-profile.jpg" alt="" class="header__img">
+                    </figure>
+                    <button class="header__button">Seguir</button>
+                </div>
+                <div class="detail__description">
+                    <h2 class="description__name">💚🚀JuanDC: Juan David Castro ⚡👨‍💻⚛</h2>
+                    <p class="description__user">@fjuandc</p>
+                    <p class="description__content">
+                        📚🍏 The Eternal Student
+                        👨‍🏫 Course Director and Teacher in
+                        @Platzi
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="twitter__recommended">
+            <form class="recommended__header">
+                <input type="text" placeholder="Buscar" class="recommended__input">
+            </form>
+            <div class="recommended__signup">
+                <h3 class="signup__title">¿Eres nuevo en Twitter?</h3>
+                <p class="signup__paragraph">Regístrate ahora para obtener tu propia cronología personalizada.</p>
+                <ul class="list__buttons">
+                    <li>
+                        <button>Google</button>
+                    </li>
+                    <li>
+                        <button>Apple</button>
+                    </li>
+                    <li>
+                        <button>Teléfono</button>
+                    </li>
+                </ul>
+                <p class="signup__footer">
+                    Al registrarte, aceptas los <a href="https://www.twitter.com/tos">Términos de servicio</a> y la <a href="https://www.twitter.com/privacy">Política de privacidad</a>, incluida la política de <a href="https://help.twitter.com/es/rules-and-policies/twitter-cookies">Uso de Cookies</a>.
                 </p>
             </div>
-        </div>
+            <div class="recommended__images">
+                <img src="https://picsum.photos/500" alt="">
+                <img src="https://picsum.photos/501" alt="">
+                <img src="https://picsum.photos/502" alt="">
+                <img src="https://picsum.photos/503" alt="">
+                <img src="https://picsum.photos/504" alt="">
+                <img src="https://picsum.photos/505" alt="">
+            </div>
+        </section>
     </main>
-    <section class="twitter__recommended">
-        <form class="recommended__header">
-            <input type="text" placeholder="Buscar" class="recommended__input">
-        </form>
-        <div class="recommended__signup">
-            <h3 class="signup__title">¿Eres nuevo en Twitter?</h3>
-            <p class="signup__paragraph">Regístrate ahora para obtener tu propia cronología personalizada.</p>
-            <ul class="list__buttons">
-                <li>
-                    <button>Google</button>
-                </li>
-                <li>
-                    <button>Apple</button>
-                </li>
-                <li>
-                    <button>Teléfono</button>
-                </li>
-            </ul>
-            <p class="signup__footer">
-                Al registrarte, aceptas los <a href="https://www.twitter.com/tos">Términos de servicio</a> y la <a href="https://www.twitter.com/privacy">Política de privacidad</a>, incluida la política de <a href="https://help.twitter.com/es/rules-and-policies/twitter-cookies">Uso de Cookies</a>.
-            </p>
-        </div>
-        <div class="recommended__images">
-            <img src="https://picsum.photos/500" alt="">
-            <img src="https://picsum.photos/501" alt="">
-            <img src="https://picsum.photos/502" alt="">
-            <img src="https://picsum.photos/503" alt="">
-            <img src="https://picsum.photos/504" alt="">
-            <img src="https://picsum.photos/505" alt="">
-        </div>
-    </section>
-
 </body>
 
 </html>
