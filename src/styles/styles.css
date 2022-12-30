@@ -21,6 +21,10 @@ ul, ol {
 }
 a {
     text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover {
+    text-decoration: underline;
 }
 img {
     width: 100px;
@@ -132,7 +136,7 @@ button:hover {
 }
 .profile__header .header__info .info__tweets {
     font-size: 1.2rem;
-    color: rgb(83, 100, 113);
+    color: #536471;
 }
 .twitter__profile .profile__banner {
     width: 100%;
@@ -174,6 +178,71 @@ button:hover {
     color: var(--white);
     background-color: var(--black);
 }
+.profile__details .detail__description .description__name {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.profile__details .detail__description .description__user {
+    font-size: 1.4rem;
+    color: rgb(83, 100, 113);
+    margin-bottom: 15px;
+}
+.profile__details .detail__description .description__content {
+    font-size: 1.5rem;
+}
+.profile__details .detail__description .description__content--baseline {
+    margin-top: 20px;
+}
+.profile__details .detail__description .description__personal-info {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 15px 0;
+}
+.detail__description .description__personal-info .personal-info__item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.description__personal-info .personal-info__item .item__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: contain;
+}
+.description__personal-info .personal-info__item .location {
+    background-image: url(../imgs/location.png);
+}
+.description__personal-info .personal-info__item .link {
+    background-image: url(../imgs/enlace.png);
+}
+.description__personal-info .personal-info__item .calendar {
+    background-image: url(../imgs/calendario.png);
+}
+.description__personal-info .personal-info__item .item__text {
+    font-size: 1.5rem;
+    color: #536471;
+}
+.profile__details .detail__description .description__account-info {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.detail__description .description__account-info .account-info__item {
+    margin-right: 20px;
+    font-size: 1.4rem;
+    color: #536471;
+}
+.detail__description .description__account-info .account-info__item:hover {
+    text-decoration: underline var(--black);
+    cursor: pointer;
+}
+.detail__description .description__account-info .account-info__item b {
+    color: var(--black);
+}
+
+
 /* Recommended section */
 .twitter__recommended {
     width: 33%;
