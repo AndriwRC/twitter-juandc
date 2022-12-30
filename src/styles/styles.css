@@ -38,8 +38,8 @@ button:hover {
     max-width: 1400px;
 }
 /* Left twitter menu */
-.twitter__menu, .twitter__recommended {
-    width: 25%;
+.twitter__menu {
+    width: 23%;
 }
 .twitter__menu .twitter__nav {
     padding-left: 50px;
@@ -92,7 +92,9 @@ button:hover {
 
 /* Main twitter content */
 .twitter__profile {
-    width: 50%;
+    width: 44%;
+    border: solid 1px var(--secondary-color);
+    border-bottom: none;
 }
 .twitter__profile .profile__header {
     display: flex;
@@ -131,4 +133,36 @@ button:hover {
 .profile__header .header__info .info__tweets {
     font-size: 1.2rem;
     color: rgb(83, 100, 113);
+}
+.twitter__profile .profile__banner {
+    width: 100%;
+}
+.twitter__profile .profile__banner img {
+    width: 100%;
+}
+
+.twitter__profile .profile__details {
+    padding: 12px 16px 0 16px;
+}
+.twitter__profile .profile__details .details__header {
+    position: relative;
+    width: 100%;
+}
+.profile__details .details__header .header__img-container {
+    position: absolute;
+    top: -12px;
+    transform: translateY(-50%);
+    width: 25%;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+.details__header .header__img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Recommended section */
+.twitter__recommended {
+    width: 33%;
 }
