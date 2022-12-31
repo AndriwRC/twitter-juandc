@@ -459,3 +459,12 @@ button:hover {
         display: none;
     }
 }
+
+@media (max-width: 688px) {
+    .twitter__profile {
+        width: calc(100% - 64px);
+    }
+    .profile__details .details__description .description__personal-info {
+        flex-wrap: wrap;
+    }
+}
