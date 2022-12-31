@@ -118,15 +118,23 @@ button:hover {
     margin: 9.5px;
     border-radius: 50%;
 }
+.twitter__profile .profile__header .button__menu {
+    display: none;
+}
 .twitter__profile .profile__header .header__button:hover {
     background-color: var(--secondary-color-light);
 }
 .profile__header .header__button .button__icon {
     width: 20px;
     height: 20px;
-    background-image: url(../imgs/back.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+.profile__header .header__button .back {
+    background-image: url(../imgs/back.png);
+}
+.profile__header .header__button .menu {
+    background-image: url(../imgs/more.png);
 }
 .twitter__profile .profile__header .header__info {
     display: flex;
@@ -141,6 +149,9 @@ button:hover {
 .profile__header .header__info .info__tweets {
     font-size: 1.2rem;
     color: #536471;
+}
+.profile__header .header__search-bar, .profile__header .header__sign-buttons {
+    display: none;
 }
 .twitter__profile .profile__banner {
     width: 100%;
@@ -466,5 +477,87 @@ button:hover {
     }
     .profile__details .details__description .description__personal-info {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 559px) {
+    .twitter__menu {
+        display: none;
+    }
+    .twitter__profile {
+        width: 100%;
+    }
+    .twitter__profile .profile__header {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .twitter__profile .profile__header .header__info {
+        display: none;
+    }
+    .twitter__profile .profile__header .header__search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 106px);
+    }
+    .profile__header .header__search-bar .search-bar__icon {
+        display: inline-block;
+        width: 20%;
+        height: 26px;
+        border-radius: 9999px 0 0 9999px ;
+        background-image: url(../imgs/buscar.png);
+        background-size: 17px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--secondary-color-light);
+    } 
+    .profile__header .header__search-bar .search-bar__input {
+        width: 60%;
+        height: 26px;
+        font-size: 1.5rem;
+        background-color: var(--secondary-color-light);
+        border: none;
+        border-radius: 0 9999px 9999px 0;
+    }
+    .profile__header .header__search-bar .search-bar__input:focus-visible {
+        outline: none;
+    }
+    .twitter__profile .profile__header .button__menu {
+        display: flex;
+    }
+    .twitter__profile .profile__header .header__sign-buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .profile__header .header__sign-buttons .header__button {
+        margin: 10px 0;
+        height: 32px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 9999px;
+    }
+    .profile__header .header__sign-buttons .sign-in {
+        width: 49%;
+        border: 1px solid var(--secondary-color);
+        color: var(--primary-color);
+    }
+    .profile__header .header__sign-buttons .sign-in:hover {
+        background-color: var(--primary-color-light);
+    }
+    .profile__header .header__sign-buttons .sign-up {
+        width: 44%;
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+    .profile__header .header__sign-buttons .sign-up:hover {
+        background-color: #1a8cd8;
+    }
+    .twitter__profile .profile__nav {
+        overflow: scroll;
+    }
+    .profile__nav .nav__container {
+        min-width: 494px;
     }
 }
