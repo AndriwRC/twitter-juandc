@@ -453,3 +453,9 @@ button:hover {
         width: 266px;
     }
 }
+
+@media (max-width: 1004px) {
+    .twitter__recommended {
+        display: none;
+    }
+}
