@@ -444,3 +444,12 @@ button:hover {
         display: none;
     }
 }
+
+@media (max-width: 1094px) {
+    .twitter__recommended {
+        width: 290px;
+    }
+    .recommended__signup .signup__options {
+        width: 266px;
+    }
+}
